@@ -1,0 +1,29 @@
+{
+    "restauranter": [
+        {
+            "navn": "Egon Tårnet", 
+            "adresse": "Otto Nielsens veg 4, 7052 Trondheim", 
+            "data": [
+                {"menu": "Pizza", "price": 50}, 
+                {"menu": "Burger", "price": 25}, 
+                {"menu": "Risotto", "price": 250}]
+            },
+        {
+            "navn": "Egon Prinsen", 
+            "adresse": "Kongens gate 30, 7011 Trondheim", 
+            "data": [
+                {"menu": "French Fries", "price": 250}, 
+                {"menu":"Onion Rings", "price": 150}, 
+                {"menu":"Fried Shrimps", "price": 20}]
+        },
+        {
+            "navn": "Egon Lade", 
+            "adresse": "Haakon VIIs gate 9, 7041 Trondheim",
+            "data": [
+                {"menu":"Water", "price": 15}, 
+                {"menu": "Coke", "price": 150}, 
+                {"menu": "Beer", "price": 50}]
+        }
+    ]
+
+}
