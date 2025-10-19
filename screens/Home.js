@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import { View, StyleSheet, ScrollView, Image, Alert } from 'react-native';
 import Card from './components/Card'
 import Header from './components/Header'
-import { SafeAreaView } from 'react-native/types_generated/index';
 
 const HomeScreen = ({navigation}) => {
   const image = {
@@ -11,10 +10,8 @@ const HomeScreen = ({navigation}) => {
     gruppemåltid: require('./images/gruppemåltid.jpg'),
   }
 
-  const initialState = [
-    {id: 1, title: 'Spesialkampanje', displayText: "Vi har en spesialkampanje på burgere igjennom hele september...", handlePress: ()=>{}},
-    {id: 1, title: 'Bli medlem', displayText: "Registrer deg som medlem for å motta poeng og premier!", handlePress: ()=>{}},
-  ]
+  var data = require('../data/dummydata.json')
+  const initialState = data.artikler;
 
   const header_items = ['Restaurants', 'Takeaway', 'About us'];
 
@@ -28,33 +25,14 @@ const HomeScreen = ({navigation}) => {
     
   }
 
-  /*
-<ScrollView>
-        <Header logo={image.logo} items={header_items} handlePress={showCardItems} />
-        <View style={styles.container}>
-          {page == 'main' && 
-            <Image source={image.gruppemåltid} style={{width: 400, height: 400}} />
-          }
-          {page == 'main' && cards.map((card, i) => {
-            return <Card title={card.title} displayText={card.displayText} handlePress={card.handlePress} />
-          })}
-          {page == 'items' &&
-          items.map((item: {navn: string, adresse: string, data: {}[]}) => {
-            return <Card title={item.navn} displayText={item.adresse} />
-          })
-          }
-        </View>
-      </ScrollView>
-  */
-
   return (
-    <SafeAreaView>
+    <ScrollView>
         <Header logo={image.logo} items={header_items} handlePress={showCardItems} />
         <Image source={image.gruppemåltid} style={{width: 400, height: 400}} />
         {cards.map((card, i) => {
-            return <Card title={card.title} displayText={card.displayText} handlePress={showCardItems} />
+            return <Card title={card.title} displayText={card.displayText} handlePress={() => {navigation.navigate('Article', {article: card})}} />
           })}
-    </SafeAreaView>
+    </ScrollView>
   );
 }
 

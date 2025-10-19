@@ -2,9 +2,8 @@ import React, {useState} from 'react';
 import { View, StyleSheet, ScrollView, Image, Alert } from 'react-native';
 import Card from './components/Card'
 import Header from './components/Header'
-import { SafeAreaView } from 'react-native-safe-area-context';
 
-const RestaurantsScreen = () => {
+const RestaurantsScreen = ({navigation, route}) => {
 
   var data = require('../data/dummydata.json');
 
@@ -13,12 +12,11 @@ const RestaurantsScreen = () => {
   const [items, setItems] = useState(data.restauranter)
 
   return (
-    <SafeAreaView>
-      <Header logo={image.logo} items={header_items} handlePress={showCardItems} />
+    <View>
       {items.map((item) => {
             return <Card title={item.navn} displayText={item.adresse} />
           })}
-    </SafeAreaView>
+    </View>
   );
 }
 

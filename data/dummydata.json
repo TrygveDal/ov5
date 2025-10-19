@@ -24,6 +24,18 @@
                 {"menu": "Coke", "price": 150}, 
                 {"menu": "Beer", "price": 50}]
         }
+    ],
+    "artikler": [
+        {
+            "id": 1, 
+            "title": "Barnebursdag på EGON", 
+            "displayText": "Visste du at du kan gjennomføre barnebursdag på Egon? Hva er vel bedre enn fornøyde barn som får feire årets store dag med sine venner? På Egon har du selvfølgelig muligheten for å få servert fantastisk mat og god stemning når barna tropper opp for å feire sine beste venner. Du kan jo selvfølgelig velge hva du vil ha å spise og drikke, men her er et forslag fra oss(for barn opptil 12 år): Pizza på bordet, Mineralvann til hver, milkshake til dessert - kr. 261,- pr pers. Ring direkte til din nærmeste Egon for å avtale, Kanskje vanker det en overraskelse til bursdagsbarnet også"
+        },
+        {
+            "id": 2, 
+            "title": "Bli medlem", 
+            "displayText": "Registrer deg som medlem for å motta poeng og premier!"
+        }
     ]
 
 }

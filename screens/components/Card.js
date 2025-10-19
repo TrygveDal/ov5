@@ -3,18 +3,26 @@ import { Text, View, StyleSheet, Image, Pressable } from 'react-native';
 
 const Card = (props) => {
 
-  const handlePress = (category) => {
-    props.handlePress(category);
+  var text = props.displayText;
+  if (text.length > 100){
+    text = text.slice(0,97) + "...";
+  }
+
+  const handlePress = () => {
+    try {props.handlePress()}
+    catch {return}
   };
   return (
-    <Pressable onPress ={handlePress}>
+      <Pressable onPress ={handlePress}>
       <View style={styles.card}>
       <Text style={styles.title}>{props.title}</Text>
       <View style={{flex: 1, justifyContent: "flex-start"}}>
-          <Text style={styles.text} numberOfLines={3} >{props.displayText}</Text>
+          <Text style={styles.text} >{text}</Text>
       </View>
     </View>
     </Pressable>
+    
+    
     
   );
 }
