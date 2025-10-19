@@ -1,0 +1,41 @@
+{
+    "restauranter": [
+        {
+            "navn": "Egon Tårnet", 
+            "adresse": "Otto Nielsens veg 4, 7052 Trondheim", 
+            "data": [
+                {"menu": "Pizza", "price": 50}, 
+                {"menu": "Burger", "price": 25}, 
+                {"menu": "Risotto", "price": 250}]
+            },
+        {
+            "navn": "Egon Prinsen", 
+            "adresse": "Kongens gate 30, 7011 Trondheim", 
+            "data": [
+                {"menu": "French Fries", "price": 250}, 
+                {"menu":"Onion Rings", "price": 150}, 
+                {"menu":"Fried Shrimps", "price": 20}]
+        },
+        {
+            "navn": "Egon Lade", 
+            "adresse": "Haakon VIIs gate 9, 7041 Trondheim",
+            "data": [
+                {"menu":"Water", "price": 15}, 
+                {"menu": "Coke", "price": 150}, 
+                {"menu": "Beer", "price": 50}]
+        }
+    ],
+    "artikler": [
+        {
+            "id": 1, 
+            "title": "Barnebursdag på EGON", 
+            "displayText": "Visste du at du kan gjennomføre barnebursdag på Egon? Hva er vel bedre enn fornøyde barn som får feire årets store dag med sine venner? På Egon har du selvfølgelig muligheten for å få servert fantastisk mat og god stemning når barna tropper opp for å feire sine beste venner. Du kan jo selvfølgelig velge hva du vil ha å spise og drikke, men her er et forslag fra oss(for barn opptil 12 år): Pizza på bordet, Mineralvann til hver, milkshake til dessert - kr. 261,- pr pers. Ring direkte til din nærmeste Egon for å avtale, Kanskje vanker det en overraskelse til bursdagsbarnet også"
+        },
+        {
+            "id": 2, 
+            "title": "Bli medlem", 
+            "displayText": "Registrer deg som medlem for å motta poeng og premier!"
+        }
+    ]
+
+}
